@@ -48,7 +48,7 @@ so if there are 3 UR Blue-eyes white dragons in a structure deck and those are t
 1 against Ultra Rare ``rarity`` value.
 
 ### Why is a card missing?
-If you see a card or set missing please raise an issue, as of the time writing this there are a few manual steps to 
+If you see a card or set missing please raise an issue, as of the time of writing this there are a few manual steps to 
 kicking off the service that collates this data, so if you are seeing a missing set it is likely I have just not
 had time to run it or I have somehow missed a date for a sets release.
 
