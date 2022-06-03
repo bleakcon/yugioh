@@ -9,14 +9,14 @@ The entity pattern is used in this JSON file, why?
 
 ## Examples
 
-###Access a card by name
+### Access a card by name
 ```typescript
 const data : Output = JSON.parse(fs.readFileSync("yugioh-cards-sets.json", {encoding: "utf8"}));
 
 console.log(data.cardEntities["Sangan"])
 ```
 
-###Iterate over all cards
+### Iterate over all cards
 
 ```typescript
  const data : Output = JSON.parse(fs.readFileSync("yugioh-cards-sets.json", {encoding: "utf8"}));
@@ -27,7 +27,7 @@ console.log(data.cardEntities["Sangan"])
  })
 ```
 
-###Get all sets a card belongs to
+### Get all sets a card belongs to
 ```typescript
   const data: Output = JSON.parse(fs.readFileSync("yugioh-cards-sets.json", {encoding: "utf8"}));
 
