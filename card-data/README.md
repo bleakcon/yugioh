@@ -44,6 +44,23 @@ console.log(data.cardEntities["Sangan"])
   })
 ```
 
+### Get a cards tcg and/or ocg play status
+```typescript
+const data = fs.readFileSync("yugioh-cards-sets.json", {encoding: "utf8"})
+
+const output: Output = JSON.parse(data);
+
+const {ocg, tcg} = output.cardEntities["Uni-Zombie"].playStatus
+
+// For those unfamiliar with destructuring
+const ocgPlayStatus = output.cardEntities["Uni-Zombie"].playStatus.ocg
+const tcgPlayStatus = output.cardEntities["Uni-Zombie"].playStatus.tcg
+
+
+console.log(ocg)
+console.log(tcg)
+```
+
 ## Master Duel
 ### Check if a card exists in Master Duel
 ```typescript

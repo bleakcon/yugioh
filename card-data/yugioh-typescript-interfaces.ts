@@ -6,7 +6,7 @@ export interface Output {
     stats: YuGiOhStats
 }
 
-interface YuGiOhStats {
+export interface YuGiOhStats {
     normalTraps: number,
     continuousTrap: number,
     counterTrap: number,
@@ -42,6 +42,7 @@ export interface YuGiOhCard {
     featuredInSets: Record<string, YuGiOhCardSetOverview>,
     konamiCardId: number
     masterDuelInfo : MasterDuelInfo
+    playStatus : YuGiOhCardPlayStatus
 }
 
 export interface MasterDuelInfo {
@@ -61,4 +62,9 @@ export interface YuGiOhCardSetInformation {
 export interface YuGiOhCardSetOverview {
     rarity: string
     cardCode: string
+}
+
+export interface YuGiOhCardPlayStatus {
+    ocg: string,
+    tcg: string
 }
