@@ -3,7 +3,7 @@ export interface Output {
     setEntities: Record<string, YuGiOhCardSetInformation>,
     cards: Array<string>,
     sets: Array<string>,
-    stats?: YuGiOhStats
+    stats: YuGiOhStats
 }
 
 interface YuGiOhStats {
@@ -40,7 +40,14 @@ export interface YuGiOhCard {
     species : string,
     cardText : string,
     featuredInSets: Record<string, YuGiOhCardSetOverview>,
-    konamiCardId?: number
+    konamiCardId: number
+    masterDuelInfo : MasterDuelInfo
+}
+
+export interface MasterDuelInfo {
+    cardRarity?: string,
+    containedInPacks?: Array<string>
+    isInMasterDuel: boolean
 }
 
 export interface YuGiOhCardSetInformation {
